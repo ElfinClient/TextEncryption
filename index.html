@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Text Encoding</title>
+    <link rel="stylesheet" href="./resources/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Custom Shift Cipher</h2>
+        <form action="#" method="post" id="cipherForm">
+            <label for="textInput">Enter your text:</label>
+            <input type="text" id="textInput" name="userInput" placeholder="Enter your text here" required>
+            <label for="shiftAmount">Enter a number from 1 to 26:</label>
+            <input type="number" id="shiftAmount" name="shift" min="1" max="26" placeholder="Enter a number from 1 to 26" required>
+            <div class="button-group">
+                <input type="submit" value="Submit">
+                <select name="mode" id="modeSelect">
+                    <option value="encrypt">Encrypt</option>
+                    <option value="decrypt">Decrypt</option>
+                </select>
+            </div>
+        </form>
+        <!-- Include Font Awesome library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Update the copy button with the clipboard icon -->
+<button id="copyButton"><i class="fas fa-clipboard"></i> Copy Encrypted Text</button>
+        <div class="encoded-message" id="encodedMessage">
+            See your encrypted message here
+        </div>
+    </div>
+    <script src="./resources/script.js"></script>
+</body>
+</html>
