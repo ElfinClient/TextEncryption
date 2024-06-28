@@ -17,7 +17,7 @@ copyButton.addEventListener('click', function() {
     document.body.removeChild(textarea);
     
     // Provide visual feedback or alert the user
-    alert('Text copied to clipboard!');
+    //alert('Text copied to clipboard!');
 });
 
   const alphabetLowercase = 'abcdefghijklmnopqrstuvwxyz ';
